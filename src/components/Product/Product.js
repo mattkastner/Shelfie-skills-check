@@ -45,7 +45,7 @@ class Product extends Component {
 
                             <button
                                 onClick={() => {
-                                    this.props.editProducts(this.props.inventory.product_id, this.state.editName, this.state.editPrice)
+                                    this.props.editProducts(this.props.inventory.product_id, { name:this.state.editName, price:this.state.editPrice })
                                     this.toggleEdit()
                                 }} >
                                 Save
